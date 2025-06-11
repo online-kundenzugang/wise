@@ -95,7 +95,7 @@
       transition: background 0.2s ease-in-out, transform 0.2s;
     }
     .logout-button:hover {
-      background: #c12527;
+      background: #9fe870;
       transform: translateY(-2px);
     }
     .app-header {
@@ -112,7 +112,7 @@
       z-index: 99;
     }
     .app-header img {
-      height: 40px;
+      height: 50px;
     }
     #sidebar-menu {
       width: 220px;
@@ -251,50 +251,80 @@
     <div class="app-container">
       <div class="section-content" id="section-anlagekonto">
 
-        <div class="container">
-  <div class="card">
-    <h2>Anlagebetrag</h2>
-    <div class="amount">EUR 100.000,00</div>
-    <div class="rate">CHF 93'720,00 bei Kurs 0,9372</div>
-  </div>
-
-  <div class="card">
-    <h2>Zinsertrag</h2>
-    <div class="amount">EUR 0,00</div>
-    <div class="rate">CHF 0,00 bei Kurs 0,9372</div>
-  </div>
-</div>
-
-        <div class="progress-container">
-          <div class="progress-info">
-            <strong>Zinsgutschrift bisher: <span id="earned">0 €</span></strong><br>
-            <small>Noch <span id="days-left">0</span> Tage bis vollständiger Zinsertrag</small>
+        <!-- First duplicated section -->
+        <div class="container" id="container-1">
+          <div class="card">
+            <h2>Anlagebetrag</h2>
+            <div class="amount">EUR 100.000,00</div>
+            <div class="rate">CHF 93.564.00 bei Kurs 0,93564</div>
           </div>
-          <div class="progress-bar-wrapper">
-            <div id="progress-fill" class="progress-bar"></div>
-            <div id="progress-percent" class="progress-label">0%</div>
+
+          <div class="card">
+            <h2>Zinsertrag</h2>
+            <div class="amount">EUR 0,00</div>
+            <div class="rate">CHF 0,00 bei Kurs 0,93564</div>
           </div>
         </div>
+
+        <div class="progress-container" id="progress-container-1">
+          <div class="progress-info">
+            <strong>Zinsgutschrift bisher: <span id="earned-1">0 €</span></strong><br>
+            <small>Noch <span id="days-left-1">0</span> Tage bis vollständiger Zinsertrag</small>
+          </div>
+          <div class="progress-bar-wrapper">
+            <div id="progress-fill-1" class="progress-bar"></div>
+            <div id="progress-percent-1" class="progress-label">0%</div>
+          </div>
+        </div>
+
+        <hr style="margin: 40px 0;" />
+
+        <!-- Second duplicated section -->
+        <div class="container" id="container-2">
+          <div class="card">
+            <h2>Anlagebetrag</h2>
+            <div class="amount">EUR 100.000,00</div>
+            <div class="rate">CHF 93.564.00 bei Kurs 0,93564</div>
+          </div>
+
+          <div class="card">
+            <h2>Zinsertrag</h2>
+            <div class="amount">EUR 0,00</div>
+            <div class="rate">CHF 0,00 bei Kurs 0,93564</div>
+          </div>
+        </div>
+
+        <div class="progress-container" id="progress-container-2">
+          <div class="progress-info">
+            <strong>Zinsgutschrift bisher: <span id="earned-2">0 €</span></strong><br>
+            <small>Noch <span id="days-left-2">0</span> Tage bis vollständiger Zinsertrag</small>
+          </div>
+          <div class="progress-bar-wrapper">
+            <div id="progress-fill-2" class="progress-bar"></div>
+            <div id="progress-percent-2" class="progress-label">0%</div>
+          </div>
+        </div>
+
       </div>
       <div class="section-content" id="section-kontoinhaber" style="display:none;">
           <h3><strong>Kontoinhaber:</strong></h3><hr>
-  <p><strong>Name:</strong> Josef Höck</p>
-  <p><strong>Straße:</strong> Eisengrabenweg 12</p>
-  <p><strong>PLZ:</strong> 89407</p>
-  <p><strong>Ort:</strong> Dillingen</p>
+  <p><strong>Name:</strong> Paul Mann</p>
+  <p><strong>Straße:</strong> Eisertstr. 50</p>
+  <p><strong>PLZ:</strong> 63773</p>
+  <p><strong>Ort:</strong> Goldbach</p>
   <p><strong>Land:</strong> Deutschland</p><br>
   <p><strong>Zahlungsinformation für Ihre Festgeldanlage:</strong></p><hr>
-  <p><strong>Empfänger:</strong> Josef Höck</p>
-  <p><strong>IBAN:</strong> CH070021521525255540Y</p>
-  <p><strong>Kontonummer:</strong> 21525255540Y</p>
-  <p><strong>BLZ:</strong> 00215</p>
-  <p><strong>BIC (SWIFT):</strong> UBSWCHZH12C</p>
-  <p><strong>Bank:</strong> UBS Switzerland AG</p>
-<p><strong>Verwendungszweck:</strong> 298448952188</p><br>
-  <p><strong>Wichtig:</strong> Bitte geben Sie als Empfänger ausschließlich Ihren eigenen vollständigen Namen an. Als Verwendungszweck tragen Sie bitte ausschließlich die oben genannte Referenznummer ein.</p><hr><br>
+  <p><strong>Empfänger:</strong> PayDo</p>
+  <p><strong>IBAN:</strong> CH8208799920500103814</p>
+  <p><strong>Kontonummer:</strong> 920500103814</p>
+  <p><strong>BLZ:</strong> 08799</p>
+  <p><strong>BIC (SWIFT):</strong> INCOCHZZXXX</p>
+  <p><strong>Bank:</strong>InCore Bank AG</p>
+<p><strong>Verwendungszweck:</strong> ECOM964185F</p><br>
+  <p><strong>Wichtig:</strong> Bitte geben Sie als Empfänger ausschließlich PayDo. Als Verwendungszweck tragen Sie bitte ausschließlich die oben genannte Referenznummer ein.(ECOM964185F)</p><hr><br>
   <div style="font-size:13px;">
   <p><strong>Hinweis zur Einlagensicherung:</strong></p>
-  <p>Einlagen bei der UBS AG sind gemäß den gesetzlichen Bestimmungen bis zu 100.000 CHF pro Kunde durch die Schweizer Einlagensicherung geschützt.
+  <p>Einlagen bei der Wise AG sind gemäß den gesetzlichen Bestimmungen bis zu 100.000 CHF pro Kunde durch die Schweizer Einlagensicherung geschützt.
 
 Für Anlagesummen über 100.000 CHF erfolgt eine zusätzliche Absicherung über unsere Hauptfiliale in Genf, sodass insgesamt Einlagen von bis zu 500.000 CHF pro Kunde gesichert werden können.
 
@@ -304,23 +334,40 @@ So stellen wir sicher, dass auch größere Vermögensbeträge zuverlässig, gese
   <br>
       </div>
       <div class="section-content" id="section-paket" style="display:none;">
-        <h3><strong>Anlagepaket:</strong></h3>Gold (UBS AG)</p><hr>
+        <h3><strong>Anlagepaket:</strong></h3>Anlagepaket Silber Wise</p><hr>
   <p><strong>Anlagesumme:</strong> 100.000 EUR</p>
-  <p><strong>Laufzeit:</strong> 12 Monate</p>
-  <p><strong>Zinssatz:</strong> 4,45 % p.a.</p>
-  <p><strong>Zinsertrag:</strong> 4.450,00 EUR</p>
-  <p><strong>Zinsergänzung:</strong> 264,60 EUR</p>
-  <p><strong>Gesamtauszahlungsbetrag:</strong> 104.714,60 EUR</p><br>
+  <p><strong>Laufzeit:</strong> 24 Monate</p>
+  <p><strong>Zinssatz:</strong> 4,49 % p.a.</p>
+  <p><strong>Zinsertrag:</strong> €8.980,00 EUR</p>
+  <p><strong>Zinsbonus:</strong> 0,50 %</p>
+  <p><strong>Gesamtauszahlungsbetrag:</strong> 109.024.90 EUR</p><br>
+  <h3><strong>Anlagepaket:</strong></h3>Anlagepaket Gold Wise</p><hr>
+  <p><strong>Anlagesumme:</strong> 100.000 EUR</p>
+  <p><strong>Laufzeit:</strong> 36 Monate</p>
+  <p><strong>Zinssatz:</strong> 5,10 % p.a.</p>
+  <p><strong>Zinsertrag:</strong> 15.300.00 EUR</p>
+  <p><strong>Zinsbonus:</strong> 0,50 %</p>
+  <p><strong>Gesamtauszahlungsbetrag:</strong> 115.376.50 EUR</p><br>
         
       </div>
       <div class="section-content" id="section-transaktionen" style="display:none;">
         <h3><strong>Letzte Transaktionen:</strong></h3>
   <hr>
-  <p><strong>Zahlung erforderlich:</strong> 
+    <p><strong>Zahlung erforderlich:</strong> 
   <p>Der Betrag ist zur Zahlung fällig.</p>
-  <p><strong>Betrag CHF:</strong> CHF 93'720,00</p>
+  <p><strong>Betrag CHF:</strong> CHF 93'372,00</p>
   <p><strong>Betrag EUR:</strong> EUR 100.000,00 <p>Kurs: 0,9372 (EUR/CHF)</p>
-  <p><strong>Vertragseingang:</strong> 19.05.2025 um 21:45 Uhr</p><br>
+  <p><strong>Offen:</strong> 11.06.2025 um 11:45 Uhr</p><br>
+    <p><strong>Zahlungseingang:</strong> 
+  <p>Betrag Gebucht.</p>
+  <p><strong>Betrag CHF:</strong> CHF 46'720,00</p>
+  <p><strong>Betrag EUR:</strong> EUR 50.000,00 <p>Kurs: 0,9360 (EUR/CHF)</p>
+  <p><strong>Vertragseingang:</strong> 13.05.2025 um 16:05 Uhr</p><br>
+  <p><strong>Zahlungseingang:</strong> 
+  <p>Betrag Gebucht.</p>
+  <p><strong>Betrag CHF:</strong> CHF 46'860,00</p>
+  <p><strong>Betrag EUR:</strong> EUR 50.000,00 <p>Kurs: 0,9372 (EUR/CHF)</p>
+  <p><strong>Eingang:</strong> 09.05.2025 um 14:45 Uhr</p><br>
   <p>🔔 Zahlungserinnerung</p> <p>Bitte begleichen Sie den oben aufgeführten offenen Betrag zeitnah, um Ihre Festgeldanlage erfolgreich abzuschließen.
 
 Die Zahlungsdaten sowie Ihre persönliche Referenzanweisung finden Sie im Kundenbereich unter „Kontoinhaber“ → „Zahlungsinformation für Ihre Festgeldanlage“.
@@ -328,11 +375,11 @@ Die Zahlungsdaten sowie Ihre persönliche Referenzanweisung finden Sie im Kunden
       </div>
       <div class="section-content" id="section-referenzkonto" style="display:none;">
         <h3><strong>Kontoinhaber:</strong></h3><hr>
-  <p><strong>Kontoinhaber:</strong> Josef Höck</p>
-  <p><strong>IBAN:</strong> </p>
-  <p><strong>BIC:</strong> </p>
-  <p><strong>Bank:</strong> </p>
-  <p><strong>Land:</strong> </p><br>
+  <p><strong>Kontoinhaber:</strong> Paul Mann</strong></p>
+  <p><strong>IBAN: DE35501900000000140538</strong> </p>
+  <p><strong>BIC: FFVBDEFFXXX</strong> </p>
+  <p><strong>Bank: Frankfurter Volksbank Rhein-Main</strong> </p>
+  <p><strong>Land: Deutschland</strong> </p><br>
   <p>Hinweis:</p> <p>Die Auszahlung Ihrer Festgeldanlage erfolgt ausschließlich auf das von Ihnen hinterlegte persönliche Referenzkonto. Dieses Konto muss auf Ihren Namen lauten und im Kundenbereich vollständig und korrekt angegeben sein.
 
 Auszahlungen an Konten Dritter oder nicht verifizierte Bankverbindungen sind aus regulatorischen und sicherheitsrelevanten Gründen nicht möglich.
@@ -344,23 +391,23 @@ Auszahlungen an Konten Dritter oder nicht verifizierte Bankverbindungen sind aus
         <h3>Support</h3>
         <p>📞 +41 44 707 72 03<br><br>Mo–Fr: 9–17 Uhr</p>
 <p style="margin-top:15px;">
-  <a href="https://securedigitalkonto.github.io/kundename/support.html" target="_blank" style="color: var(--red); font-weight: bold; text-decoration: none;">
+  <a href="https://wise.com/help/" target="_blank" style="color: var(--red); font-weight: bold; text-decoration: none;">
     ➤ Zum Kundendienst wechseln
   </a>
 </p>
 <br>
-<!-- UBS-Style Footer -->
+<!-- Wise-Style Footer -->
 <footer class="footer">
   <div class="footer-content">
     <p>
-      Information zu UBS
+      Information zu Wise
     <p>
       Die auf dieser Website angebotenen Produkte, Dienstleistungen, Informationen und/oder Unterlagen sind Personen mit Wohnsitz in bestimmten Ländern möglicherweise nicht zugänglich. Bitte beachten Sie die geltenden Verkaufsbeschränkungen für die entsprechenden Produkte oder Dienstleistungen.
     </p>
     <p>
-      Das Kopieren, Bearbeiten, Modifizieren, Verteilen, Teilen oder jede andere Nutzung dieses Materials (weder für kommerzielle Zwecke noch für andere), mit Ausnahme der persönlichen Betrachtung, ist ohne vorherige schriftliche Genehmigung durch die UBS strengstens untersagt.
+      Das Kopieren, Bearbeiten, Modifizieren, Verteilen, Teilen oder jede andere Nutzung dieses Materials (weder für kommerzielle Zwecke noch für andere), mit Ausnahme der persönlichen Betrachtung, ist ohne vorherige schriftliche Genehmigung durch die Wise strengstens untersagt.
     </p>
-    <p>© UBS 1998 - 2025. Alle Rechte vorbehalten.</p>
+    <p>© Wise 1998 - 2025. Alle Rechte vorbehalten.</p>
   </div>
 </footer>
 
@@ -377,8 +424,8 @@ Auszahlungen an Konten Dritter oder nicht verifizierte Bankverbindungen sind aus
   </div>
 
   <script>
-    const USERNAME = "1";
-    const PASSWORD = "1";
+    const USERNAME = "pmann";
+    const PASSWORD = "W091iS&mann";
 
     function showSection(id) {
       const sections = document.querySelectorAll('.section-content');
@@ -425,15 +472,13 @@ Auszahlungen an Konten Dritter oder nicht verifizierte Bankverbindungen sind aus
         btn.disabled = true;
         btn.style.background = "transparent";
         btn.style.color = "#999";
-        btn.style.border = "2px solid #b77";
+        btn.style.border = "2px solid #9fe870";
         btn.style.cursor = "not-allowed";
       }
     }
 
-    function updateProgress() {
-      const totalInterest = 4714.60;
-      const daysTotal = 365;
-      const startDate = new Date("2025-05-00");
+    function updateProgressSection(idSuffix, totalInterest, startDate) {
+      const daysTotal = 730;
       const today = new Date();
       const timeDiff = today - startDate;
       const daysPassed = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
@@ -442,10 +487,10 @@ Auszahlungen an Konten Dritter oder nicht verifizierte Bankverbindungen sind aus
       const percent = Math.min((earned / totalInterest) * 100, 100);
       const daysLeft = Math.max(daysTotal - daysPassed, 0);
 
-      document.getElementById('progress-fill').style.width = percent + "%";
-      document.getElementById('progress-percent').innerText = Math.round(percent) + "%";
-      document.getElementById('earned').innerText = earned.toLocaleString("de-DE", { style: "currency", currency: "EUR" });
-      document.getElementById('days-left').innerText = daysLeft;
+      document.getElementById(`progress-fill-${idSuffix}`).style.width = percent + "%";
+      document.getElementById(`progress-percent-${idSuffix}`).innerText = Math.round(percent) + "%";
+      document.getElementById(`earned-${idSuffix}`).innerText = earned.toLocaleString("de-DE", { style: "currency", currency: "EUR" });
+      document.getElementById(`days-left-${idSuffix}`).innerText = daysLeft;
     }
 
     window.onload = () => {
@@ -453,7 +498,7 @@ Auszahlungen an Konten Dritter oder nicht verifizierte Bankverbindungen sind aus
         document.body.innerHTML = `
           <div style="display:flex;justify-content:center;align-items:center;height:100vh;background:#f5f5f5;font-family:'Inter',sans-serif">
             <div style="background:#fff;padding:40px;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,0.08);max-width:400px;width:100%;text-align:center;">
-              <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freelogovectors.net%2Fwp-content%2Fuploads%2F2023%2F03%2Fwise-logo-freelogovectors.net_.png&f=1&nofb=1&ipt=db0be53ed52ad070fe25be1497f7df6746e50e7b329a0d9146088ce5f9a8c064" alt="Logo" style="height:45px;margin-bottom:20px">
+              <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freelogovectors.net%2Fwp-content%2Fuploads%2F2023%2F03%2Fwise-logo-freelogovectors.net_.png&f=1&nofb=1&ipt=db0be53ed52ad070fe25be1497f7df6746e50e7b329a0d9146088ce5f9a8c064" alt="Logo" style="height:85px;margin-bottom:20px">
               <h2 style="font-size:1.25rem;margin-bottom:30px;font-weight:800">Anmeldung – Kundenzugang</h2>
               <form onsubmit="event.preventDefault(); login();">
                 <div style="margin-bottom:20px;text-align:left;">
@@ -464,7 +509,7 @@ Auszahlungen an Konten Dritter oder nicht verifizierte Bankverbindungen sind aus
                   <label for="login-pass" style="font-weight:700;font-size:0.9rem;display:block;margin-bottom:6px;">Passwort</label>
                   <input id="login-pass" type="password" placeholder="Passwort" oninput="validateLogin()" style="width:100%;padding:12px;border:1px solid #ccc;border-radius:4px;background:#f9f9f9;font-size:0.95rem;">
                 </div>
-                <button id="loginBtn" type="submit" disabled style="background:transparent;color:#999;border:2px solid #b77;padding:12px;width:100%;border-radius:4px;font-weight:bold;font-size:1rem;cursor:not-allowed;">Anmelden</button>
+                <button id="loginBtn" type="submit" disabled style="background:transparent;color:#999;border:2px solid #9fe870;padding:12px;width:100%;border-radius:4px;font-weight:bold;font-size:1rem;cursor:not-allowed;">Anmelden</button>
               </form>
             </div>
           </div>
@@ -472,9 +517,10 @@ Auszahlungen an Konten Dritter oder nicht verifizierte Bankverbindungen sind aus
       } else {
         document.getElementById("main-dashboard").style.display = "block";
         showSection('anlagekonto');
-        updateProgress();
+        updateProgressSection("1", 8980.00, new Date("2025-05-14"));  // first section
+        updateProgressSection("2", 15300.00, new Date("2025-06-00"));  // second section
       }
-    };
+    }
   </script>
   
 </body>
